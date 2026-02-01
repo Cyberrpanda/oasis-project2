@@ -1,18 +1,21 @@
-import { useState } from 'react'
+import './index.css'
 
+// import your components
+import Header from './components/layout/header'
+import Footer from './components/layout/footer'
+import Home from './components/pages/home'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <h1 className="text-3xl font-bold underline text-sky-500">
-          Tailwind v4 is live!
-        </h1>
-      </div>
-      
-    </>
+    <div className="min-h-screen flex flex-col bg-white text-gray-900">
+      <Header />
+
+      <main className="flex-1">
+        <Home />
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
