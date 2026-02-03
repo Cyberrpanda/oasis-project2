@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header class="bg-white">
+    <header class="bg-purple-300">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">
@@ -15,39 +15,39 @@ export default function Header() {
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6 text-sm">
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
+              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> About </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
+              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Careers </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
+              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> History </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
+              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Services </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
+              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Projects </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Blog </a>
             </li>
           </ul>
         </nav>
 
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-            <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm" href="#">
+            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-700 shadow-sm" href="#">
               Login
             </a>
 
             <div class="hidden sm:flex">
-              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="#">
+              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-700" href="#">
                 Register
               </a>
             </div>
