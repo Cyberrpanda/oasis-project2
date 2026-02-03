@@ -8,3 +8,4 @@ abandoned scss implementaion in favour of tailwind v4
 
 original plan failed because init -p is a v3 command. In v4, there is no "initialization" because there are no JS config files to generate. You just import it and go.
 
+utilized react-slick for carousel in slider component
