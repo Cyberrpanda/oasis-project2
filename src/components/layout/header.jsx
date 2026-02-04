@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header class="bg-purple-300">
+    <header class="bg-blue-800">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">

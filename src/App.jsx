@@ -4,6 +4,7 @@ import './index.css'
 import Header from './components/layout/header'
 import Footer from './components/layout/footer'
 import Home from './components/pages/home'
+import Products from './components/pages/products'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <main className="flex-1">
         <Home />
+        <Products />
       </main>
 
       <Footer />
