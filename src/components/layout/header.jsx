@@ -15,39 +15,39 @@ export default function Header() {
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6 text-sm">
             <li>
-              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> About </a>
+              <a class="text-gray-900 transition hover:text-gray-500/75" href="#"> About </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Careers </a>
+              <a class="text-gray-900 transition hover:text-gray-500/75" href="#"> Careers </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> History </a>
+              <a class="text-gray-900 transition hover:text-gray-500/75" href="#"> History </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Services </a>
+              <a class="text-gray-900 transition hover:text-gray-500/75" href="#"> Services </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Projects </a>
+              <a class="text-gray-900 transition hover:text-gray-500/75" href="#"> Projects </a>
             </li>
 
             <li>
-              <a class="text-gray-700 transition hover:text-gray-500/75" href="#"> Blog </a>
+              <a class="text-gray-900 transition hover:text-gray-500/75" href="#"> Blog </a>
             </li>
           </ul>
         </nav>
 
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-700 shadow-sm" href="#">
+            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-900 shadow-sm" href="#">
               Login
             </a>
 
             <div class="hidden sm:flex">
-              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-700" href="#">
+              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-900" href="#">
                 Register
               </a>
             </div>

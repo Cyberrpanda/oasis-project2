@@ -29,11 +29,11 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const images = [
-  "Giftcards-100.jpeg",
+  "vr.jpeg",
   "controller.jpeg",
   "screen.jpeg",
-  "switch.jpeg",
-  "games.jpeg"
+  "switch-white.jpeg",
+  "nba.jpeg"
 ];
 
 function SimpleSlider() {

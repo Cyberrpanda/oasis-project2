@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            <footer class="bg-blue-700">
+            <footer class="bg-blue-800">
   <div class="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
     <div class="sm:flex sm:items-center sm:justify-between">
       <div class="text-teal-600">
@@ -12,7 +12,7 @@ export default function Footer() {
 
       <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
         <li>
-          <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+          <a href="#" rel="noreferrer" target="_blank" class="text-gray-900 transition hover:opacity-75">
             <span class="sr-only">Facebook</span>
 
             <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -22,7 +22,7 @@ export default function Footer() {
         </li>
 
         <li>
-          <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+          <a href="#" rel="noreferrer" target="_blank" class="text-gray-900 transition hover:opacity-75">
             <span class="sr-only">Instagram</span>
 
             <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -32,7 +32,7 @@ export default function Footer() {
         </li>
 
         <li>
-          <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+          <a href="#" rel="noreferrer" target="_blank" class="text-gray-900 transition hover:opacity-75">
             <span class="sr-only">Twitter</span>
 
             <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -42,7 +42,7 @@ export default function Footer() {
         </li>
 
         <li>
-          <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+          <a href="#" rel="noreferrer" target="_blank" class="text-gray-900 transition hover:opacity-75">
             <span class="sr-only">GitHub</span>
 
             <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -52,7 +52,7 @@ export default function Footer() {
         </li>
 
         <li>
-          <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+          <a href="#" rel="noreferrer" target="_blank" class="text-gray-900 transition hover:opacity-75">
             <span class="sr-only">Dribbble</span>
 
             <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -69,23 +69,23 @@ export default function Footer() {
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> 1on1 Coaching </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Company Review </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Accounts Review </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> HR Consulting </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> SEO Optimisation </a>
           </li>
         </ul>
       </div>
@@ -95,15 +95,15 @@ export default function Footer() {
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> About </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Meet the Team </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Accounts Review </a>
           </li>
         </ul>
       </div>
@@ -113,15 +113,15 @@ export default function Footer() {
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Contact </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> FAQs </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Live Chat </a>
           </li>
         </ul>
       </div>
@@ -131,19 +131,19 @@ export default function Footer() {
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Accessibility </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Returns Policy </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+            <a href="#" class="text-gray-900 transition hover:opacity-75"> Refund Policy </a>
           </li>
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75">
+            <a href="#" class="text-gray-900 transition hover:opacity-75">
               Hiring-3 Statistics
             </a>
           </li>
@@ -151,7 +151,7 @@ export default function Footer() {
       </div>
     </div>
 
-    <p class="text-xs text-gray-500">© 2026. Oasis. All rights reserved.</p>
+    <p class="text-xs text-gray-900">© 2026. Oasis. All rights reserved.</p>
   </div>
 </footer>
         </footer>
