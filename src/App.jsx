@@ -1,11 +1,11 @@
 import './index.css'
 
 // import your components
-import Header from './components/layout/header'
-import Footer from './components/layout/footer'
-import Home from './components/pages/home'
-import Products from './components/pages/products'
-import Testimonial from './components/pages/testimonial'
+import Header from './components/layout/header.jsx'
+import Footer from './components/layout/footer.jsx'
+import Home from './components/pages/home.jsx'
+import Products from './components/pages/products.jsx'
+import Testimonial from './components/pages/testimonial.jsx'
 
 function App() {
   return (

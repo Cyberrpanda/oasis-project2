@@ -1,4 +1,4 @@
-import SimpleSlider from "../ui/slider";
+import SimpleSlider from "../ui/slider.jsx";
 
 export default function Home(){
     return (
