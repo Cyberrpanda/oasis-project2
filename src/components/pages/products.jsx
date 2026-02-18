@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Products() {
   const [visibleProducts, setVisibleProducts] = useState(12);
@@ -241,37 +241,42 @@ export default function Products() {
 
   const displayedProducts = gamingProducts.slice(0, visibleProducts);
 
-  let cart = []; //empty cart array to hold added products.
+  
+  function addTocart(product) {
+    setCartItems(prevCart => {
+    const existingItem = prevCart.find(item => item.id === product.id);
 
-  function addTocart(gamingProduct) {
-    const existingItem = cart.find(item => item.id === gamingProduct.id);
-
-    if (existingItem){
-      existingItem.quantity += 1;
+    if (existingItem) {
+      return prevCart.map(item => 
+        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+      );
     } else {
-      cart.push({ ...gamingProduct, quantity: 1});
+      return [...prevCart, { ...product, quantity: 1}];
     }
+  });
   }
 
   function calculateTotal() {
-    return cart.reduce((total, item)  =>  {
-      return total + (item.price * item.quantity);
-    }, 0);
+    return cartItems.reduce((total, item)  =>  {
+      const numericPrice = parseFloat(Stringitem.price.replace(/[^0-9.-]+/g, ""));
+      return total + (numericPrice * item.quantity);
+    }, 0).toFixed(2);
   }
 
-  function removeItem(gamingProduct) {
-    cart = cart.filter(item => item.id !== gamingProduct.Id);
+  function removeItem(product) {
+    setCartItems(prevCart => prevCart.filter(item => item.id !== product.id));
   }
 
-  function saveCart() {
-    localStorage.setItem('myUserCart', JSON.stringify(cart));
-  }
-
-  function loadCart() {
+  useEffect(() => {
     const savedCart = localStorage.getItem('myUserCart');
+    if (savedCart) {
+      setCartItems(JSON.parse(savedCart));
+    }
+  }, []);
 
-    cart = savedData ? JSON.parse(savedData) : [];
-  }
+  useEffect(() => {
+    localStorage.setItem('myUserart' , JSON.stringify(cartItems));
+  }, [cartItems]);
 
 
   return (
@@ -405,7 +410,7 @@ export default function Products() {
                     )}
                   </div>
                   <button 
-                    onClick={ addTocart (product)} className="px-5 py-2 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+                    onClick={() => addTocart (product)} className="px-5 py-2 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                     style={{ backgroundColor: '#193cb8' }}
                   >
                     Add to Cart
