@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 export default function Products() {
   const [visibleProducts, setVisibleProducts] = useState(12);
+  const [cartItems, setCartItems] = useState([]);
+
   
   const gamingProducts = [
     {
@@ -239,6 +241,39 @@ export default function Products() {
 
   const displayedProducts = gamingProducts.slice(0, visibleProducts);
 
+  let cart = []; //empty cart array to hold added products.
+
+  function addTocart(gamingProduct) {
+    const existingItem = cart.find(item => item.id === gamingProduct.id);
+
+    if (existingItem){
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ ...gamingProduct, quantity: 1});
+    }
+  }
+
+  function calculateTotal() {
+    return cart.reduce((total, item)  =>  {
+      return total + (item.price * item.quantity);
+    }, 0);
+  }
+
+  function removeItem(gamingProduct) {
+    cart = cart.filter(item => item.id !== gamingProduct.Id);
+  }
+
+  function saveCart() {
+    localStorage.setItem('myUserCart', JSON.stringify(cart));
+  }
+
+  function loadCart() {
+    const savedCart = localStorage.getItem('myUserCart');
+
+    cart = savedData ? JSON.parse(savedData) : [];
+  }
+
+
   return (
     <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -370,7 +405,7 @@ export default function Products() {
                     )}
                   </div>
                   <button 
-                    className="px-5 py-2 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+                    onClick={ addTocart (product)} className="px-5 py-2 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                     style={{ backgroundColor: '#193cb8' }}
                   >
                     Add to Cart
